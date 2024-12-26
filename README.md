@@ -8,7 +8,7 @@ more efficient use of transportation resources and contributes to environmental 
 <li>Introduction</li>
 <li>Features</li>
 <li>Technologies Used</li>
-
+<li>To run this project</li>
 
 <h3>Introduction</h3>
 <p>Most people commute daily, mostly alone in their vehicles. This increases the level of traffic congestion and fuel consumption, 
