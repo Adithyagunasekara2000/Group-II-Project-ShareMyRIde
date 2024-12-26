@@ -9,6 +9,7 @@ const API_KEY = 'AIzaSyAiQ_WJER_3HDCs0B6tH01WPTCzB1COSLA';
 
 const authRouter=require("./routes/authRoute")
 const rideRoute=require("./routes/rideRoute")
+const mapRoute=require('./routes/mapRoute')
 
 mongoose.connect("mongodb+srv://adithyagunasekara2000:YvovidOF8PJwJoTI@cluster0.ksfu6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 var db = mongoose.connection;
@@ -18,6 +19,7 @@ app.use(express.json());
 
 app.use("/api/auth",authRouter);
 app.use("/api/ride",rideRoute);
+app.use("/api/map",mapRoute);
 
 
 app.listen(2002,()=>{
