@@ -4,6 +4,11 @@ import MapView, { Marker, Polyline } from 'react-native-maps';
 import axios from 'axios';
 
 export default function map() {
+  const [startLocation, setStartLocation] = useState('');
+  const [endLocation, setEndLocation] = useState('');
+  const [coordinates, setCoordinates] = useState([]);
+  const [markers, setMarkers] = useState([]);
+
 
     return (
         <View style={styles.container}>
