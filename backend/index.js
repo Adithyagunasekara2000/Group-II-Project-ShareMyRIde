@@ -4,6 +4,9 @@ const cors = require('cors');
 const app=new express();
 const mongoose=require("mongoose");
 
+app.use(cors());
+const API_KEY = 'AIzaSyAiQ_WJER_3HDCs0B6tH01WPTCzB1COSLA'; 
+
 const authRouter=require("./routes/authRoute")
 const rideRoute=require("./routes/rideRoute")
 
