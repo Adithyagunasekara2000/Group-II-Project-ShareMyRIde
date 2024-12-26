@@ -28,8 +28,8 @@ res.status(200).json(savedFeedback);
     //Get Feedback for a specific ride
 router.get('/feedback/:rideId',auth,aync(req,res)=> {
   try{
-    const feedbacks=await Feedback.find({rideId:req.params.rideId});
-    res.status(200).json(feedbacks);
+    const feedbacks=await Feedback.find({rideId:req.params.rideId}),
+    res.status(200).json(feedbacks),
 
   } 
   catch(error)
