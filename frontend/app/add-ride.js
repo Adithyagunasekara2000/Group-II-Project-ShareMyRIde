@@ -1,6 +1,7 @@
 import React from 'react'
 //import MapView from 'react-native-maps';
 import { StyleSheet, Text, View } from 'react-native';
+import {map} from '../app/map'
 
 const AddRide = () => {
   return (
