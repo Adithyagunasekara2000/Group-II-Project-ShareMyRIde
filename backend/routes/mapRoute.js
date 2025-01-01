@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Route for fetching directions
-app.post('/route', async (req, res) => {
+router.post('/route', async (req, res) => {
     const { start, end } = req.body;
   
     if (!start || !end) {
